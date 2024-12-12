@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-class Shape {
+abstract class Shape {
     protected $ample;
     protected $alt;
 
@@ -10,7 +10,7 @@ class Shape {
         $this-> alt = $alt;
     }
     
-    public function calculaArea() : float {}
+    abstract public function calculaArea() : float;
 
     public function print() : void {
         echo "ample: $this->ample i alt: $this->alt<br>";

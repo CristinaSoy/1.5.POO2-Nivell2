@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 echo "<h2>Sprint 1. Tema 4. Poo 1. Nivell 1.</h2>";
-echo "<h3>Exercici 2. Clase Shape amb métode constructor i subclasses Triangle i Rectangle </h3>";
+echo "<h3>Exercici 2. Clase abstracta Shape amb métode constructor i subclasses Triangle i Rectangle </h3>";
 
 require_once "Shape.php";
 require_once "Triangle.php";
