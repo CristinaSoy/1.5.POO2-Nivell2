@@ -6,11 +6,17 @@ echo "<h3>Exercici 2. Clase abstracta Shape amb métode constructor i subclasses
 require_once "Shape.php";
 require_once "Triangle.php";
 require_once "Rectangle.php";
+require_once "Cercle.php";
 
-$triangle1 = new Triangle(10,3.5);
-$triangle1-> print();
+$formes = [];
+$formes= array(
+    new Triangle(10,3.5),
+    new Rectangle(10,2),
+    new Cercle(3.333),
+);
 
-$rectangle1 = new Rectangle(10,2);
-$rectangle1-> print();
+foreach($formes as $forma) {
+    $forma->print();
+}
 
 ?>
